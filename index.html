@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-top">
+        <div class="header-logo"><a href="#top"></a></div>
+        <div class="header-switches">
+          <button class="header-switch">住宿</button>
+          <button class="header-switch">體驗</button>
+        </div>
+        <div class="header-buttons">
+          <button class="header-btn">在 Airbnb 上發布房源</button>
+          <button class="header-btn"><i class="fa-solid fa-globe"></i></button>
+          <button class="Account-btn">
+            <i class="fa-solid fa-bars"></i><i class="fa-solid fa-user"></i>
+          </button>
+        </div>
+      </div>
+      <div class="search-banner">
+        <ul class="search-bar">
+          <li>
+            <button class="search-bar-btn">
+              <div>
+                <p class="search-bar-title">地點</p>
+                <input
+                  class="search-bar-input"
+                  type="text"
+                  placeholder="搜尋目的地"
+                />
+                <div class="collaps-list"></div>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="search-bar-btn">
+              <div>
+                <p class="search-bar-title">入住</p>
+                <input
+                  class="search-bar-input"
+                  type="date"
+                  placeholder="選擇日期"
+                />
+                <div class="collaps-list"></div>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="search-bar-btn">
+              <div>
+                <p class="search-bar-title">退房</p>
+                <input
+                  class="search-bar-input"
+                  type="date"
+                  placeholder="選擇日期"
+                />
+                <div class="collaps-list"></div>
+              </div>
+            </button>
+          </li>
+          <li class="search-bar-combine">
+            <button class="search-bar-btn">
+              <div>
+                <p class="search-bar-title">旅客</p>
+                <input
+                  class="search-bar-input"
+                  type="text"
+                  placeholder="新增人數"
+                />
+                <div class="collaps-list"></div>
+              </div>
+              <button class="search-bar-searchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="">
+      <section class="category-menu container">
+        <div class="categories">
+          <ul class="category-list">
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-ticket"></i>
+                <p class="category-text">傳奇</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-gopuram"></i>
+                <p class="category-text">台灣民宿</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-bed"></i>
+                <p class="category-text">房間</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <p class="category-text">島嶼</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-mug-saucer"></i>
+                <p class="category-text">B&B</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-person-snowboarding"></i>
+                <p class="category-text">衝浪</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-sun-plant-wilt"></i>
+                <p class="category-text">絕美景致</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-house-flag"></i>
+                <p class="category-text">樹屋</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-torii-gate"></i>
+                <p class="category-text">日式旅館</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-dungeon"></i>
+                <p class="category-text">莊園</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-ferry"></i>
+                <p class="category-text">船屋</p>
+              </a>
+            </li>
+            <li class="category-icon">
+              <a href="#">
+                <i class="fa-solid fa-mountain-city"></i>
+                <p class="category-text">著名城市</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter filter-btn btn-filter">
+            <i class="fa-solid fa-sliders"></i>
+            <p>篩選條件</p>
+          </button>
+          <button class="price-switch filter-btn btn-tax">
+            <p>顯示稅前總價</p>
+            <i class="fa-solid fa-toggle-off"></i>
+          </button>
+        </div>
+      </section>
+      <section class="products container">
+        <ul class="products-list">
+          <li class="products-card">
+            <div class="card-img"></div>
+            <ul class="card-list">
+              <li class="card-title">
+                <div><p>義大利羅馬</p></div>
+                <div><i class="fa-solid fa-star"></i>4.89</div>
+              </li>
+              <li>房東：Sergio · 電影製片人</li>
+              <li>11月5日至10日</li>
+              <li>$5,361 TWD 晚</li>
+            </ul>
+          </li>
+          <li class="products-card">
+            <div class="card-img"></div>
+            <ul class="card-list">
+              <li class="card-title">
+                <div><p>義大利羅馬</p></div>
+                <div><i class="fa-solid fa-star"></i>4.89</div>
+              </li>
+              <li>房東：Sergio · 電影製片人</li>
+              <li>11月5日至10日</li>
+              <li>$5,361 TWD 晚</li>
+            </ul>
+          </li>
+          <li class="products-card">
+            <div class="card-img"></div>
+            <ul class="card-list">
+              <li class="card-title">
+                <div><p>義大利羅馬</p></div>
+                <div><i class="fa-solid fa-star"></i>4.89</div>
+              </li>
+              <li>房東：Sergio · 電影製片人</li>
+              <li>11月5日至10日</li>
+              <li>$5,361 TWD 晚</li>
+            </ul>
+          </li>
+          <li class="products-card">
+            <div class="card-img"></div>
+            <ul class="card-list">
+              <li class="card-title">
+                <div><p>義大利羅馬</p></div>
+                <div><i class="fa-solid fa-star"></i>4.89</div>
+              </li>
+              <li>房東：Sergio · 電影製片人</li>
+              <li>11月5日至10日</li>
+              <li>$5,361 TWD 晚</li>
+            </ul>
+          </li>
+          <li class="products-card">
+            <div class="card-img"></div>
+            <ul class="card-list">
+              <li class="card-title">
+                <div><p>義大利羅馬</p></div>
+                <div><i class="fa-solid fa-star"></i>4.89</div>
+              </li>
+              <li>房東：Sergio · 電影製片人</li>
+              <li>11月5日至10日</li>
+              <li>$5,361 TWD 晚</li>
+            </ul>
+          </li>
+          <li class="products-card">
+            <div class="card-img"></div>
+            <ul class="card-list">
+              <li class="card-title">
+                <div><p>義大利羅馬</p></div>
+                <div><i class="fa-solid fa-star"></i>4.89</div>
+              </li>
+              <li>房東：Sergio · 電影製片人</li>
+              <li>11月5日至10日</li>
+              <li>$5,361 TWD 晚</li>
+            </ul>
+          </li>
+          <li class="products-card">
+            <div class="card-img"></div>
+            <ul class="card-list">
+              <li class="card-title">
+                <div><p>義大利羅馬</p></div>
+                <div><i class="fa-solid fa-star"></i>4.89</div>
+              </li>
+              <li>房東：Sergio · 電影製片人</li>
+              <li>11月5日至10日</li>
+              <li>$5,361 TWD 晚</li>
+            </ul>
+          </li>
+          <li class="products-card">
+            <div class="card-img"></div>
+            <ul class="card-list">
+              <li class="card-title">
+                <div><p>義大利羅馬</p></div>
+                <div><i class="fa-solid fa-star"></i>4.89</div>
+              </li>
+              <li>房東：Sergio · 電影製片人</li>
+              <li>11月5日至10日</li>
+              <li>$5,361 TWD 晚</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="sub-menu">
+        <h2>為下一次度假尋找靈感</h2>
+        <ul class="sub-menu-lists">
+          <li class="sub-menu-list">
+            <button class="sub-menu-btn">熱門</button>
+          </li>
+          <li class="sub-menu-list">
+            <button class="sub-menu-btn">藝術與文化</button>
+          </li>
+          <li class="sub-menu-list">
+            <button class="sub-menu-btn">戶外</button>
+          </li>
+          <li class="sub-menu-list">
+            <button class="sub-menu-btn">山區</button>
+          </li>
+          <li class="sub-menu-list">
+            <button class="sub-menu-btn">海邊</button>
+          </li>
+          <li class="sub-menu-list">
+            <button class="sub-menu-btn">類型</button>
+          </li>
+          <li class="sub-menu-list">
+            <button class="sub-menu-btn">好玩新鮮事</button>
+          </li>
+        </ul>
+        <div class="sub-menu-second">
+          <ul class="sub-menu-links">
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+            <li class="sub-menu-link">
+              <a href="#" class="link-title">坎莫爾</a>
+              <a href="#" class="link-type">私有公寓</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>© 2024 Airbnb, Inc.</p>
+          <span class="copyright-dot">‧</span>
+          <a href="" class="copyright-link">隱私相關</a>
+          <span class="copyright-dot">‧</span>
+          <a href="" class="copyright-link">條款</a>
+          <span class="copyright-dot">‧</span>
+          <a href="" class="copyright-link">網站地圖</a>
+        </div>
+        <div class="footer-socialMedia">
+          <ul class="footer-socialMedia-list">
+            <li><a href="#"><i class="fa-solid fa-globe"></i> 繁體中文(TW)</a></li>
+            <li><a href="#"><i class="fa-solid fa-dollar-sign">TWD</a></i></li>
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-weibo"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-weixin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/0c47a08a49.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
